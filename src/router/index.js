@@ -7,15 +7,15 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/dashboard'
+      redirect: '/vue-dashboard'
     },
     {
-      path: '/dashboard',
+      path: '/vue-dashboard',
       name: 'dashboard',
       component: () => import('../pages/PageDashboard.vue')
     },
     {
-      path: '/dashboard/:page',
+      path: '/vue-dashboard/:page',
       name: 'dashboard',
       component: () => import('../pages/PageDashboard.vue')
     },
